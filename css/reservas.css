@@ -1,0 +1,36 @@
+form{
+  display:grid;
+  place-items: center;
+  border:20px inset #4ecdc4;
+  margin: 10px  0;
+  width: 100;
+  padding: 0; 
+  
+}
+
+#tipo_mesa{
+width: 500px;
+height: 20px;
+}
+
+#nombre_usuario{
+width: 500px;
+height: 20px;
+}
+
+
+#fecha_reserva{
+width: 500px;
+height: 20px;
+}
+
+#cantidad_personas{
+width: 500px;
+height: 20px;
+}
+
+h1{
+display: grid;
+place-items: center;
+
+}

@@ -1,0 +1,64 @@
+form{
+  display:grid;
+  place-items: center;
+  border:20px inset #4ecdc4;
+  margin: 10px  0;
+  width: 100;
+  padding: 0; 
+  
+}
+
+#categoria{
+width: 500px;
+height: 20px;
+}
+
+#codigo_producto{
+width: 500px;
+height: 20px;
+}
+
+
+#nombre_producto{
+width: 500px;
+height: 20px;
+}
+
+#descripcion_producto{
+width: 500px;
+height: 20px;
+}
+
+#cantidad_productos{
+width: 500px;
+height: 20px;
+}
+
+#precio_unitario{
+width: 500px;
+height: 20px;
+}
+
+#provedor{
+width: 500px;
+height: 20px;
+}
+
+button{
+width: 200px;
+height: 20px;
+
+}
+
+
+
+
+body{
+
+    background-color:#f5ebea
+}
+
+h1{
+    display:grid;
+    place-items: center;
+}
