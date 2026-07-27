@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@3.0.2/dist/css/bulma-tooltip.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>login</title>
 </head>
+
 <body>
-    <h1>Modulo de login</h1>
-    <h1>modulo de inventario</h1>
-    <form action="">
 
-         <label for = "">Tipo de documento </label>
-         <input type="text" id="tipo_documento" required placeholder="Ingrese su tipo de documento">
+    <div class="container">
+        <h1 class="title is-1">Modulo de login</h1>
 
-
-         <br>
-         <label for = "">Numero de documento </label>
-         <input type="number" id="numero_documento" required placeholder="Ingrese su documento">
-
-         <br>
-
-         <label for = ""> Contraseña: </label>
-         <input type="password" id="contraseña" required placeholder="Ingrese su contrasenña">
-
-         <br>
-         
-         <a href="../index.html"> volver al inicio </a> 
-         <button type="button" id="btnGuardar"> guardar </button>
+        <label for="">Tipo de documento </label>
+        <input class="input is-link" type="text" id="tipo_documento" required
+            placeholder="Ingrese su tipo de documento">
 
 
-        
-    </form>
+        <br>
+        <label for="">Numero de documento </label>
+        <input class="input is-link" type="number" id="numero_documento" required placeholder="Ingrese su documento">
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-     <script src="../js/login.js"></script>
+
+        <label for=""> Contraseña: </label>
+        <div class=" control has-tooltip-top" data-tooltip="Ejm (Cris1820.)">
+        <input class="input is-link" type="password" id="contraseña" required placeholder="Ingrese su contrasenña">
+
+        </div>
+        <br>
+        <br>
+        <a class="button is-link is-outlined" type="button" href="../index.html"> volver al inicio </a>
+
+        <button class="button is-success is-outlined" type="button" id="btnGuardar"> guardar </button>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/login.js"></script>
 </body>
-</html> 
+
+</html>

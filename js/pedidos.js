@@ -33,14 +33,6 @@ function validarInformacion () {
             });
             return;
         }
-        if (!/^\d{4,6}$/.test(Direccion)) {
-            console.log("Direccion debe contener solo de 4 a 6 números")
-            Swal.fire({
-                title: "Direccion debe contener solo de 4 a 6 números",
-                icon: "error"
-            });
-            return;
-        }
         if (!/^[a-zA-Z]+$/.test(Nombre_usuario)) {
             console.log("Nombre de usuario debe contener solo letras")
             Swal.fire({
