@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
     <link rel="stylesheet" href="../css/menu.css">
     <title>menu</title>
 </head>
 <body>
-    <h1>Modulo de menu</h1>
-    <hr>
-    
-    <table>
-        <thead>
-            <tr>
-              <th>Nombre del plato</th>
-              <th>ingredientes del plato</th>
-              <th>categoria</th>
-              <th>precio</th>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <h2 class="title is-2">Menú del restaurante</h2>
+            </a>
+        </div>
+    </nav>
 
-            </tr>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title is-3">Módulo de menú</h1>
+                <p class="subtitle is-6">Explora los platos disponibles y sus detalles.</p>
 
-        </thead>
-        <tbody>
-            <tr>
-                    <th colspan = "4" >Platos de la casa</th>
-            </tr>
-            <tr>
-                <td>Arepa Rellena</td>
-                <td>carne,pollo,maicitos,queso</td>
-                <td>plato de la casa</td>
-                <td>15.000</td>
-            </tr>
+                <table class="table is-fullwidth is-striped is-hoverable">
+                    <thead>
+                        <tr>
+                            <th>Nombre del plato</th>
+                            <th>Ingredientes</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="4" class="has-text-centered">Platos de la casa</th>
+                        </tr>
+                        <tr>
+                            <td>Arepa Rellena</td>
+                            <td>Carne, pollo, maicitos, queso</td>
+                            <td>Plato de la casa</td>
+                            <td>$15.000</td>
+                        </tr>
+                        <tr>
+                            <td>Sancocho</td>
+                            <td>Carne, pollo, papa, yuca, agua, condimentos</td>
+                            <td>Plato de la casa</td>
+                            <td>$25.000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="has-text-centered">Comidas rápidas</th>
+                        </tr>
+                        <tr>
+                            <td>Salchipapa</td>
+                            <td>Carne, pollo, papa criolla, salsa, salchicha</td>
+                            <td>Comidas rápidas</td>
+                            <td>$12.000</td>
+                        </tr>
+                        <tr>
+                            <td>Hamburguesa</td>
+                            <td>Carne, pollo, papa francesa, salsas, salchicha, pan, tomate</td>
+                            <td>Comidas rápidas</td>
+                            <td>$30.000</td>
+                        </tr>
+                        <tr>
+                            <td>Perro caliente</td>
+                            <td>Papa francesa, salsas, salchicha, pan, ripio de papa, queso</td>
+                            <td>Comidas rápidas</td>
+                            <td>$23.000</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <tr>
-                <td>sancocho</td>
-                <td>carne,pollo,papa,yuca,agua,condimentos</td>
-                <td>plato de la casa</td>
-                <td>25.000</td>
-
-            </tr>
-                <tr>
-                    <th colspan = "4" >Comidas rapidas</th>
-                </tr>
-            <tr>
-                <td>salchipapa</td>
-                <td>carne,pollo,papa criolla, salsa, salchicha</td>
-                <td>comidas rapidas</td>
-                <td>12.000</td>
-
-            </tr>
-
-            <tr>
-                <td>hamburguesa</td>
-                <td>carne,pollo,papa francesa, salsas, salchicha, pan, tomate</td>
-                <td>comidas rapidas</td>
-                <td>30.000</td>
-
-            </tr>
-
-             <tr>
-                <td>perro caliente</td>
-                <td>,papa francesa, salsas, salchicha, pan,ripio de papa ,queso </td>
-                <td>comidas rapidas</td>
-                <td>23.000</td>
-
-            </tr>
-        </tbody>
-    </table>
-    <a href="../index.html"> volver al inicio</a>
-
-
-
+                <a class="button is-link is-outlined mt-3" href="../index.html">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ function ValidarInformacion () {
     let Genero = document.getElementById("genero").value;
     let Cargo = document.getElementById("cargo").value;
     let Fecha_nacimiento = document.getElementById("fecha_nacimiento").value;
-    let Contraseña = document.getElementById("contrasena").value;
+    let Contraseña = document.getElementById("contraseña").value;
 
    if (!nombre || !Apellido || !Tipo_documento || !Numero_documento || !Telefono || !Correo_electronico || !Genero || !Cargo || !Fecha_nacimiento || !Contraseña) {
         Swal.fire({
