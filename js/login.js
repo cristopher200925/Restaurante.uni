@@ -44,7 +44,7 @@ function ValidarInformacion() {
             return;
         }
         
-        Swal.fire({
+            Swal.fire({
             position: "top-end",
             icon: "success",
             title: "Inicio de sesión exitoso",
