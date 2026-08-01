@@ -6,7 +6,6 @@ function ValidarInformacion() {
 
     if (!Tipo_mesa || !Nombre_completo || !fecha_reserva || !cantidad_personas) {
         Swal.fire({
-            position: "top-end",
             icon: "error",
             title: "Campos Incompletos",
             showConfirmButton: false,
@@ -21,15 +20,8 @@ function ValidarInformacion() {
             ${fecha_reserva} \n
             ${cantidad_personas}`
         );
-        if (!/^[a-zA-Z]+$/.test(Tipo_mesa)) {
-            console.log("Tipo de mesa debe contener solo letras")
-            Swal.fire({
-                title: "Tipo de mesa debe contener solo letras",
-                icon: "error"
-            });
-            return;
-        }
-        if (!/^[a-zA-Z]+$/.test(Nombre_completo)) {
+
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(Nombre_completo)) {
             console.log("Nombre completo debe contener solo letras")
             Swal.fire({
                 title: "Nombre completo debe contener solo letras",
@@ -55,7 +47,6 @@ function ValidarInformacion() {
         }
 
         Swal.fire({
-            position: "top-end",
             icon: "success",
             title: "Reserva realizada exitosamente",
             showConfirmButton: false,

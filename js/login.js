@@ -5,7 +5,6 @@ function ValidarInformacion() {
 
     if (!tipo_documento || !numero_documento || !contraseña) {
         Swal.fire({
-            position: "top-end",
             icon: "error",
             title: "Campos Incompletos",
             showConfirmButton: false,
@@ -45,7 +44,6 @@ function ValidarInformacion() {
         }
         
             Swal.fire({
-            position: "top-end",
             icon: "success",
             title: "Inicio de sesión exitoso",
             showConfirmButton: false,

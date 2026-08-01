@@ -12,7 +12,6 @@ function ValidarInformacion () {
 
    if (!nombre || !Apellido || !Tipo_documento || !Numero_documento || !Telefono || !Correo_electronico || !Genero || !Cargo || !Fecha_nacimiento || !Contraseña) {
         Swal.fire({
-            position: "top-end",
             icon: "error",
             title: "Campos Incompletos",
             showConfirmButton: false,
@@ -33,7 +32,7 @@ function ValidarInformacion () {
             ${Fecha_nacimiento} \n
             ${Contraseña}`
         );
-        if (!/^[a-zA-Z]+$/.test(nombre)) {
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre)) {
             console.log("Nombre debe contener solo letras")
             Swal.fire({
                 title: "Nombre debe contener solo letras",
@@ -41,7 +40,7 @@ function ValidarInformacion () {
             });
             return;
         }
-        if (!/^[a-zA-Z]+$/.test(Apellido)) {
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(Apellido)) {
             console.log("Apellido debe contener solo letras")
             Swal.fire({
                 title: "Apellido debe contener solo letras",
@@ -115,7 +114,6 @@ function ValidarInformacion () {
         }
 
         Swal.fire({
-            position: "top-end",
             icon: "success",
             title: "Usuario registrado exitosamente",
             showConfirmButton: false,

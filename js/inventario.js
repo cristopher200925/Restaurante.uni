@@ -8,14 +8,15 @@ function ValidarInformacion() {
     let provedor = document.getElementById("provedor").value;
 
     if (!categoria || !codigo_prodt || !nombre_prodt || !descripcion_prodt || !cantidad_prodt || !precio_unitario || !provedor) {
-        Swal.fire({
-            position: "top-end",
-            icon: "error",
-            title: "Campos Incompletos",
-            showConfirmButton: false,
-            timer: 1500
-        });
-    }
+    Swal.fire({
+        icon: "error",
+        title: "Campos Incompletos",
+        showConfirmButton: false,
+        timer: 1500
+    });
+    return
+}
+
     else {
         console.log(
             `Informacion del Producto: \n
@@ -51,7 +52,7 @@ function ValidarInformacion() {
             });
             return;
         }
-        if (!/^[a-zA-Z]+$/.test(descripcion_prodt)) {
+        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(descripcion_prodt)) {
             console.log("Descripcion del producto debe contener solo letras")
             Swal.fire({
                 title: "Descripcion del producto debe contener solo letras",
@@ -85,7 +86,6 @@ function ValidarInformacion() {
         }
 
         Swal.fire({
-            position: "top-end",
             icon: "success",
             title: "Informacion Guardada Correctamente",
             showConfirmButton: false,

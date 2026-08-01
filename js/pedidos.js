@@ -8,7 +8,6 @@ function validarInformacion () {
 
     if (!Producto || !Direccion || !Nombre_usuario || !Cantidad || !Metodo_pago || !telefono) {
         Swal.fire({
-            position: "top-end",
             icon: "error",
             title: "Campos Incompletos",
             showConfirmButton: false,
@@ -68,7 +67,6 @@ function validarInformacion () {
     }
 
     Swal.fire({
-        position: "top-end",
         icon: "success",
         title: "Pedido realizado exitosamente",
         showConfirmButton: false,
